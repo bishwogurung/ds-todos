@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/ds-todos":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/ds-todos","hostpath":"/Users/Bishwo/Sites/ds-todos","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Bishwo/Sites/ds-todos","disabled":false,"__vagrantfile":true}}}

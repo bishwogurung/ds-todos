@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content')         
 
     <!-- Bootstrap Boilerplate... -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 
     <div class="panel-body">
+
         <!-- Display Validation Errors -->
         @include('common.errors')
 
@@ -46,7 +48,7 @@
     @if (count($todos) > 0)
         <div class="panel panel-default">
             <div class="panel-heading">
-                Current todos
+                Current Todos
             </div>
 
             <div class="panel-body">
@@ -54,7 +56,7 @@
 
                     <!-- Table Headings -->
                     <thead>
-                        <th>todo</th>
+                        <th>List of Todos</th>
                         <th>&nbsp;</th>
                     </thead>
 
@@ -64,7 +66,10 @@
                             <tr>
                                 <!-- todo Name -->
                                 <td class="table-text">
-                                    <div>{{ $todo->name }}</div>
+                                    <div>
+                                        <a href="/todo/{{ $todo->id }}">{{ $todo->name}}</a>
+                                    </div>
+                                 
                                 </td>
 
                                 <td>
